@@ -13,7 +13,7 @@ create_mainfest_file(){
     echo "内存大小：${IBM_MEM_SIZE}"
     
     
-    cat >  ${SH_PATH}/IBMYes/gi-cloudfoundry/manifest.yml  << EOF
+    cat >  ${SH_PATH}/yos/gi-cloudfoundry/manifest.yml  << EOF
     applications:
     - path: .
       name: ${IBM_APP_NAME}
@@ -26,12 +26,12 @@ EOF
 
 clone_repo(){
     echo "进行初始化。。。"
-    git clone https://github.com/mmpuq/IBMYes
+    git clone https://github.com/mmpuq/yos
     cd IBMYes
     git submodule update --init --recursive
     cd gi-cloudfoundry/differentbi
     chmod +x *
-    cd ${SH_PATH}/IBMYes/gi-cloudfoundry
+    cd ${SH_PATH}/yos/gi-cloudfoundry
     echo "初始化完成。"
 }
 
