@@ -37,7 +37,7 @@ clone_repo(){
 
 install(){
     echo "进行安装。。。"
-    cd ${SH_PATH}/IBMYes/gi-cloudfoundry
+    cd ${SH_PATH}/yos/gi-cloudfoundry
     UUID=$(cat /proc/sys/kernel/random/uuid)
     echo "uuid: " $UUID
     sed -i "s/id\": .*\"/id\": \"$UUID\"/g" ./gi/config.json
