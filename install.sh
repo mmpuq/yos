@@ -29,7 +29,7 @@ clone_repo(){
     git clone https://github.com/mmpuq/yos.git
     cd yos
     git submodule update --init --recursive
-    cd gi-cloudfoundry/gi/differentbi
+    cd gi-cloudfoundry/gi
     chmod +x *
     cd ${SH_PATH}/yos/gi-cloudfoundry
     echo "初始化完成。"
