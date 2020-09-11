@@ -27,9 +27,9 @@ EOF
 clone_repo(){
     echo "进行初始化。。。"
     git clone https://github.com/mmpuq/yos.git
-    cd IBMYes
+    cd yos
     git submodule update --init --recursive
-    cd gi-cloudfoundry/differentbi
+    cd gi-cloudfoundry/gi/differentbi
     chmod +x *
     cd ${SH_PATH}/yos/gi-cloudfoundry
     echo "初始化完成。"
